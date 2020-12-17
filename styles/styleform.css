@@ -1,0 +1,269 @@
+*{
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  border: 0;
+  font-family: sans-serif;
+  font-size: 1em;
+  background-image: url("../images/zona-cero-4.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header, a, h3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #F5F6F7;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Chakra Petch', sans-serif;
+}
+
+h1 {
+  font-size: 6rem;
+  letter-spacing: 2rem;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 3rem;
+  text-align: center;
+}
+header > p, a {
+  font-size: 2rem;
+}
+
+form {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ width: auto;
+ height: 100%;
+ margin: 20px;
+}
+
+legend.main {
+  text-shadow: 1px 1px 1px red;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+}
+
+legend, p, label, a {
+  font-family: 'Bitter', serif;
+  color: #F5F6F7;
+  text-shadow: 2px 1px 1px #000;
+  font-size: 1.4rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+fieldset {
+  background-color: rgba(189, 224, 254,0.5);
+  /* background-color: aliceblue; */
+  /* padding: 0 6rem; */
+  margin: 2rem 6rem;
+  padding: 2rem;
+  border: none;
+}
+
+fieldset > fieldset {
+  border: solid 2px #fff;
+  border-radius: 6px;
+  padding: 2rem;
+  background-color: rgba(189, 224, 254, 0.3)
+}
+
+fieldset.textarea {
+  display: contents;
+  /* align-items: center; */
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border-radius: 6px;
+}
+
+
+input[id="firstname"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid rgba(247, 37, 133, 0.7);
+}
+
+input[id="lastname"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid rgba(247, 37, 133, 0.7);
+}
+
+input[id="birthday"] {
+  margin: 8px 0;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid rgba(247, 37, 133, 0.7);
+  border-radius: 6px;
+}
+
+input[type=email] {
+  margin: 8px 0;
+  padding: 12px 20px;
+  width: 50%;
+  box-sizing: border-box;
+  border-top: 2px solid rgba(247, 37, 133, 0.7);
+  border-radius: 6px;
+}
+
+input[type=tel] {
+  margin: 8px 0;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid rgba(247, 37, 133, 0.7);
+  border-radius: 6px;
+}
+
+input[type=url] {
+  margin: 8px 0;
+  padding: 12px 20px;
+  width: 50%;
+  box-sizing: border-box;
+  border-top: 2px solid rgba(247, 37, 133, 0.7);
+  border-radius: 6px;
+}
+
+input[type=submit] {
+  margin: 8px 0;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border-radius: 6px;
+  font-size: 1.2rem;
+  /* background-color: transparent; */
+  background-color: rgba(67, 97, 238, 0.8);
+  color: #F5F6F7;
+  font-weight: bold;
+  border: 6px solid rgba(247, 37, 133, 0.7);
+}
+
+[name*="Address"] {
+  border-left: 6px solid rgba(247, 37, 133, 0.7);
+  border-right: 2px solid rgba(247, 37, 133, 0.7);
+}
+
+[name="pet"]:focus {
+  background-color: #caf0f8;
+}
+
+[name="food"]:focus {
+  background-color: #caf0f8;
+}
+
+[name="color"]:focus {
+  background-color: #ffc8dd;
+}
+
+select {
+  width: 15%;
+  font-size: 1rem;
+  height: auto;
+  margin-left: 50px;
+}
+
+textarea {
+  font-size: 1.4rem;
+  border-radius: 6px;
+}
+
+textarea:focus {
+  border: 3px solid rgb(247, 37, 133);
+}
+
+/* --------------------------- FOOTER ------------------------------------ */
+
+footer {
+  display: flex;
+  height: auto;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* -------------------- Footer hover effect ------------------------------ */
+footer {
+  background-color: #0d0d47;
+  /* background-color: #5C97FF; */
+  overflow: hidden;
+  transition-property: all;
+  transition-duration: 1s;
+  transition-timing-function: ease-in;
+  transition-delay: .7s;
+}
+
+footer:hover {
+  background-image: url("../images/zona-cero-4.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 1;
+}
+
+.nav-footer {
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+  margin-top: 20px;
+}
+
+.nav-footer a {
+  color: #F4F4F6;
+}
+
+.footer-icon i {
+  margin-right: 1rem;
+}
+
+.footer-icon:last-child {
+  margin-right: 0;
+}
+
+h5 {
+  text-align: center;
+  color: #fFfFfF;
+  font-weight: bold;
+  text-shadow: .5px .5px 2px #001B4A;
+  word-spacing: normal;
+  transition: all .2s .4s ease-in-out;
+}
+
+h5:hover {
+  word-spacing: 10px;
+  font-size: 1.25em;
+  color: #fFfFfF;
+  text-shadow: .5px .5px 4px #ff0000;
+}
+
+footer>h5 {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
