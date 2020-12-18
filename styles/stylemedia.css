@@ -27,6 +27,8 @@
     margin: 20px 0;
     padding: 2rem;
     border: none;
+    display: flex;
+    flex-direction: column;
   }
 
   input[type=submit] {
